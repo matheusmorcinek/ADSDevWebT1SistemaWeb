@@ -13,6 +13,7 @@
     --title: #2E384D;
     --red: #E83F5B;
     --green: #4CD62B;
+    --container-background: #00000080;
     --blue: #5965E0;
     --blue-dark: #4953B8;
     --blue-twitter: #2AA9E0;
@@ -31,9 +32,20 @@
 }
 
 body {
-    background: var(--background);
     color: var(--text);
+
+    background: linear-gradient(169deg, var(--white), rgba(46, 56, 77, 0.262));
+    background-size: 400% 400%;
+
+    animation: AnimationName 10s ease infinite;
 }
+
+@keyframes AnimationName {
+    0%{background-position:9% 0%}
+    50%{background-position:92% 100%}
+    100%{background-position:9% 0%}
+}
+
 
 body,
 input,
