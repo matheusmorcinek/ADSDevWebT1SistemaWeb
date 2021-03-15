@@ -6,6 +6,17 @@
     display: grid;
     grid-template-columns: 25rem auto;
     grid-gap: 2rem;
+
+    position: relative;
+}
+
+.image-background {
+    background-image: url(../../../public/background.jpg);
+    opacity: 0.1;
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    margin-top: 0.3rem;
 }
 
 .container>div {
@@ -94,7 +105,7 @@
 
     background: var(--blue);
     color: var(--white);
-    
+
     outline: none;
     border: none;
     border-radius: 0.3rem;
