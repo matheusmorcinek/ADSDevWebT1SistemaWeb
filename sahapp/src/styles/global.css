@@ -104,9 +104,9 @@ a {
 }
 
 .sidebar div:first-child {
-   display: flex;
-   justify-content: center;
-   margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .sidebar div:first-child img {
@@ -122,4 +122,30 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: inherit;
+}
+
+/* table */
+table {
+    width: 100%;
+}
+
+table tr {
+    background-color: var(--white);
+}
+
+table tr th:first-child {
+    border-top-left-radius: 5rem;
+}
+
+table tr th:last-child {
+    border-top-right-radius: 5rem;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table button {
+    background: transparent;
+    border: none;
 }
