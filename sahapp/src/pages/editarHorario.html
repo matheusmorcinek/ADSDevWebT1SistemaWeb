@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/pages/editarHorario.css" />
+
+    <title>SAH | Sistema de Ajuste de Horas</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div>
+            <img src="../../public/icons/clock-logo.svg" alt="clock logo" />
+        </div>
+
+        <div class="menu">
+
+            <button>Inserir</button>
+            <button>Editar</button>
+            <button>Visualizar</button>
+        </div>
+
+        <button class="config">
+            <img src="../../public/icons/settings.svg" alt="settings" />
+        </button>
+    </div>
+
+    <div class="container">
+
+        <div class="image-background"></div>
+
+        <div class="info-bar">
+            <div>
+                <span>Usuário: <strong>Matheus</strong></span>
+            </div>
+            <div>
+                <span>Perfil: <strong>Trabalhador</strong></span>
+            </div>
+        </div>
+
+        <div class="inner-container">
+
+            <div class="insere-hora-container">
+                <span>Insere Hora</span>
+
+                <input type="text" placeholder="Data" />
+                <input type="text" placeholder="Hora Entrada" />
+                <input type="text" placeholder="Hora Saída" />
+
+                <button>
+                    Consultar
+                </button>
+            </div>
+
+            <div>
+                <span></span>
+                <div class="table-container">
+
+                    <table>
+                        <tr>
+                            <th>Data</th>
+                            <th>Hora Entrada</th>
+                            <th>Hora Saída</th>
+                            <th>Total Horas</th>
+                            <th>Justificativa</th>
+                            <th>Opções</th>
+                        </tr>
+
+                        <tr>
+                            <td>15/03/2020</td>
+                            <td>08:00</td>
+                            <td>12:00</td>
+                            <td>4</td>
+                            <td>
+                                <select id="justificativa" name="justificativa">
+                                    <option value="conteudo">Prod. Conteúdo</option>
+                                    <option value="versionamento">Versionamento</option>
+                                    <option value="capacitacao">Capacitação</option>
+                                    <option value="emprestimo">Empréstimo</option>
+                                </select>
+                            </td>
+                            <td class="table-opcoes">
+                                <button>
+                                    <img src="../../public/icons/settings.svg" />
+                                </button>
+                                <button>
+                                    <img src="../../public/icons/close.svg" />
+                                </button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>15/03/2020</td>
+                            <td>08:00</td>
+                            <td>12:00</td>
+                            <td>4</td>
+                            <td>
+                                <select id="justificativa" name="justificativa">
+                                    <option value="conteudo">Prod. Conteúdo</option>
+                                    <option value="versionamento">Versionamento</option>
+                                    <option value="capacitacao">Capacitação</option>
+                                    <option value="emprestimo">Empréstimo</option>
+                                </select>
+                            </td>
+                            <td class="table-opcoes">
+                                <button>
+                                    <img src="../../public/icons/settings.svg" />
+                                </button>
+                                <button>
+                                    <img src="../../public/icons/close.svg" />
+                                </button>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="table-legenda">
+
+                    <span>Legenda</span>
+                    <div>
+                        <img src="../../public/icons/settings.svg" />
+                        Editar
+                    </div>
+                    <div>
+                        <img src="../../public/icons/close.svg" />
+                        Excluir
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button>Voltar</button>
+                <button>Enviar para Análise</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
