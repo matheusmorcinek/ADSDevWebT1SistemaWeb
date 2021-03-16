@@ -29,4 +29,23 @@
     border-radius: 1rem;
     border: solid 1px rgb(198, 198, 198);
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container button {
+    margin-top: 1rem;
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 1rem;
+    transform: background 0.2s;
+}
+
+.inner-container button:hover {
+    background: var(--blue-dark);
 }
