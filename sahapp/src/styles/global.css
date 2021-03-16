@@ -41,9 +41,17 @@ body {
 }
 
 @keyframes AnimationName {
-    0%{background-position:9% 0%}
-    50%{background-position:92% 100%}
-    100%{background-position:9% 0%}
+    0% {
+        background-position: 9% 0%
+    }
+
+    50% {
+        background-position: 92% 100%
+    }
+
+    100% {
+        background-position: 9% 0%
+    }
 }
 
 
@@ -61,4 +69,57 @@ button {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+/* sidebar */
+.sidebar {
+    background: var(--white);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 5rem;
+    border: solid 1px white;
+}
+
+.sidebar button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.menu button {
+    color: var(--text);
+    transition: color 0.2s;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 0.6rem;
+    border: solid 1px rgb(215, 215, 215);
+}
+
+.menu button:hover {
+    color: var(--blue-dark);
+}
+
+.sidebar div:first-child {
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+}
+
+.sidebar div:first-child img {
+    height: 4rem;
+}
+
+.sidebar button:last-child {
+    margin-bottom: 2rem;
+}
+
+.config:hover {
+    background-image: url('../../public/icons/settings-hover.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: inherit;
 }
