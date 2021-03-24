@@ -34,13 +34,14 @@
 
                 <div>
 
-                    <input type="text" placeholder="E-Mail"/>
-                    <input type="text" placeholder="Senha"/>
+                    <input id="email" type="text" placeholder="E-Mail" />
+                    <span class="input-error" id="email-error">E-mail inválido</span>
+                    <input id="psw" type="text" placeholder="Senha" />
                 </div>
 
                 <div>
 
-                    <button type="submit">Entrar</button>
+                    <button id="entrar-btn" type="button" disabled>Entrar</button>
 
                     <div>
 
@@ -67,6 +68,7 @@
 
     </div>
 
+    <script src="../src/index.js"></script>
 </body>
 
 </html>

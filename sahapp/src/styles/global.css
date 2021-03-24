@@ -149,3 +149,12 @@ table button {
     background: transparent;
     border: none;
 }
+
+.input-error {
+    display: none;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 1rem;
+    color: red;
+    font-size: 0.7rem;
+}

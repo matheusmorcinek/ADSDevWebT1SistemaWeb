@@ -134,3 +134,8 @@
 .login-form-container button:hover {
     background: var(--blue-dark);
 }
+
+.login-form-container button:disabled {
+    background: var(--gray-line);
+    cursor: not-allowed;
+}
